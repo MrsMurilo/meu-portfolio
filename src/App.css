@@ -245,3 +245,1033 @@ button,
   }
 
 }
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(37, 99, 235, 0.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(37, 99, 235, 0.05),
+      transparent 30%
+    ),
+    #f8fafc;
+}
+
+
+/* Elementos decorativos */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: -180px;
+  top: 50px;
+
+  border: 1px solid rgba(37, 99, 235, 0.10);
+
+  border-radius: 50%;
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -90px;
+  top: 120px;
+
+  border: 1px solid rgba(37, 99, 235, 0.08);
+
+  border-radius: 50%;
+}
+
+
+/* Container do Hero */
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1180px;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding: 100px 32px;
+}
+
+
+/* Conteúdo */
+
+.hero-content {
+  max-width: 850px;
+}
+
+
+/* Identificação */
+
+.hero-label {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 22px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.hero-label::before {
+  content: "";
+
+  width: 28px;
+  height: 2px;
+
+  background: #2563eb;
+
+  border-radius: 10px;
+}
+
+
+/* Título */
+
+.hero h2 {
+  max-width: 850px;
+
+  margin-bottom: 28px;
+
+  color: #0f172a;
+
+  font-size: clamp(42px, 6vw, 72px);
+
+  font-weight: 800;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.045em;
+}
+
+.hero h2 span {
+  color: #2563eb;
+}
+
+
+/* Descrição */
+
+.hero-description {
+  max-width: 680px;
+
+  margin-bottom: 36px;
+
+  color: #64748b;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+
+/* Botões */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+
+  padding: 0 24px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* Botão principal */
+
+.btn-primary {
+  color: #ffffff;
+
+  background: #2563eb;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Botão secundário */
+
+.btn-secondary {
+  color: #334155;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+}
+
+.btn-secondary:hover {
+  color: #2563eb;
+
+  border-color: #bfdbfe;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+/* ========================================
+   HERO - MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero .container {
+    padding: 80px 20px;
+  }
+
+  .hero h2 {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero::before {
+    width: 300px;
+    height: 300px;
+
+    right: -180px;
+  }
+
+  .hero::after {
+    width: 200px;
+    height: 200px;
+
+    right: -110px;
+  }
+}
+/* ========================================
+   SOBRE MIM
+======================================== */
+
+.section {
+  padding: 110px 0;
+}
+
+.section .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+
+/* ---------- CABEÇALHO DA SEÇÃO ---------- */
+
+.section-header {
+  margin-bottom: 45px;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.section-header h3 {
+  margin: 0;
+
+  font-size: clamp(32px, 4vw, 46px);
+
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+}
+
+
+/* ---------- CARD ---------- */
+
+.about-card {
+  position: relative;
+
+  padding: 48px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+
+  overflow: hidden;
+}
+
+
+/* detalhe azul lateral */
+
+.about-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 4px;
+
+  background: #2563eb;
+}
+
+
+/* ---------- CONTEÚDO ---------- */
+
+.about-content {
+  max-width: 850px;
+}
+
+.about-content p {
+  margin: 0 0 20px;
+
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.85;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-content strong {
+  color: #1e3a8a;
+
+  font-weight: 700;
+}
+
+
+/* ========================================
+   SOBRE MIM - MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section .container {
+    padding: 0 20px;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .about-card {
+    padding: 30px 26px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+}
+/* ========================================
+   PROJETOS
+======================================== */
+
+.projects-section {
+  background: #f1f5f9;
+}
+
+
+/* ---------- CARD DO PROJETO ---------- */
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
+}
+
+
+/* ---------- IMAGEM ---------- */
+
+.project-image {
+  min-height: 420px;
+
+  background: #eaf2ff;
+
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.03);
+}
+
+
+/* ---------- CONTEÚDO ---------- */
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 48px;
+}
+
+.project-category {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-bottom: 14px;
+
+  padding: 6px 11px;
+
+  color: #2563eb;
+
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-content h4 {
+  margin: 0 0 18px;
+
+  color: #0f172a;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.03em;
+}
+
+.project-content p {
+  margin: 0 0 26px;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* ---------- TECNOLOGIAS ---------- */
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 30px;
+}
+
+.technology {
+  padding: 7px 12px;
+
+  color: #475569;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* ---------- BOTÃO ---------- */
+
+.project-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  width: fit-content;
+
+  padding: 11px 18px;
+
+  color: #ffffff;
+
+  background: #2563eb;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.22);
+}
+
+
+/* ========================================
+   PROJETOS - MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    min-height: 300px;
+  }
+
+  .project-content {
+    padding: 36px;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .project-image {
+    min-height: 220px;
+  }
+
+  .project-content {
+    padding: 28px 24px;
+  }
+
+  .project-content h4 {
+    font-size: 26px;
+  }
+
+  .project-content p {
+    font-size: 15px;
+  }
+
+  .project-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+ /* ========================================
+    PROJETOS — SCROLL CINEMATOGRÁFICO
+ ======================================== */
+
+.projects-showcase {
+  position: relative;
+
+  background: #f8fafc;
+
+  overflow: hidden;
+}
+
+
+/* ---------- INTRODUÇÃO ---------- */
+
+.projects-intro {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 0;
+}
+
+.projects-intro .container {
+  max-width: 1180px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.projects-intro h3 {
+  max-width: 800px;
+
+  margin: 0 0 24px;
+
+  color: #0f172a;
+
+  font-size: clamp(48px, 7vw, 88px);
+
+  font-weight: 800;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.055em;
+}
+
+.projects-intro p {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   PROJETO — SLIDE
+ ======================================== */
+
+.project-slide {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding: 100px 7vw;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+/* ---------- NÚMERO ---------- */
+
+.project-slide-number {
+  position: absolute;
+
+  left: 6vw;
+  top: 70px;
+
+  color: #e2e8f0;
+
+  font-size: clamp(100px, 15vw, 220px);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -0.08em;
+
+  user-select: none;
+}
+
+
+/* ---------- IMAGEM ---------- */
+
+.project-slide-image {
+  position: absolute;
+
+  right: 6vw;
+
+  top: 50%;
+
+  width: min(57vw, 780px);
+
+  transform: translateY(-50%);
+
+  z-index: 1;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background: #eff6ff;
+
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.12),
+    0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.project-slide-image img {
+  width: 100%;
+
+  display: block;
+
+  transition: transform 0.8s ease;
+}
+
+.project-slide:hover .project-slide-image img {
+  transform: scale(1.025);
+}
+
+
+/* ---------- CONTEÚDO ---------- */
+
+.project-slide-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(470px, 42vw);
+
+  margin-left: 4vw;
+}
+
+.project-slide-category {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.project-slide-content h4 {
+  margin: 0 0 24px;
+
+  color: #0f172a;
+
+  font-size: clamp(48px, 6vw, 76px);
+
+  font-weight: 800;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.055em;
+}
+
+.project-slide-content h4 span {
+  color: #2563eb;
+}
+
+.project-slide-content p {
+  max-width: 430px;
+
+  margin: 0 0 28px;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* ---------- TECNOLOGIAS ---------- */
+
+.project-slide-content .technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 28px;
+}
+
+.project-slide-content .technology {
+  padding: 7px 11px;
+
+  color: #475569;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+/* ---------- BOTÃO ---------- */
+
+.project-slide-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  color: #ffffff;
+
+  background: #2563eb;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-slide-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.22);
+}
+
+
+/* ========================================
+   PROJETOS — MOBILE
+ ======================================== */
+
+@media (max-width: 900px) {
+
+  .projects-intro {
+    min-height: 60vh;
+
+    padding: 90px 0;
+  }
+
+  .projects-intro .container {
+    padding: 0 20px;
+  }
+
+  .projects-intro h3 {
+    font-size: clamp(46px, 12vw, 70px);
+  }
+
+  .project-slide {
+    min-height: auto;
+
+    padding: 100px 20px 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .project-slide-number {
+    left: 20px;
+    top: 35px;
+
+    font-size: 100px;
+  }
+
+  .project-slide-image {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: 100%;
+
+    transform: none;
+
+    order: 1;
+
+    margin-bottom: 45px;
+  }
+
+  .project-slide-content {
+    width: 100%;
+
+    margin-left: 0;
+
+    order: 2;
+  }
+
+  .project-slide-content h4 {
+    font-size: clamp(46px, 12vw, 68px);
+  }
+
+}
+
+
+/* ========================================
+   PROJETOS — MOBILE PEQUENO
+ ======================================== */
+
+@media (max-width: 640px) {
+
+  .projects-intro {
+    min-height: 55vh;
+
+    padding: 80px 0;
+  }
+
+  .projects-intro p {
+    font-size: 16px;
+  }
+
+  .project-slide {
+    padding-top: 120px;
+  }
+
+  .project-slide-image {
+    border-radius: 10px;
+  }
+
+  .project-slide-content p {
+    font-size: 15px;
+  }
+
+  .project-slide-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
+/* ========================================
+   AJUSTE — PROJETO 01
+======================================== */
+
+.project-slide {
+  padding-left: 8vw;
+  padding-right: 5vw;
+}
+
+.project-slide-content {
+  width: min(430px, 34vw);
+  margin-left: 0;
+}
+
+.project-slide-image {
+  right: 4vw;
+
+  width: min(54vw, 720px);
+}
+
+.project-slide-content p {
+  max-width: 400px;
+}

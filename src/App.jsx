@@ -105,77 +105,90 @@ function App() {
 
 
         {/* Projetos */}
-        <section id="projetos" className="section projects-section">
-          <div className="container">
+<section id="projetos" className="projects-showcase">
 
-            <div className="section-header">
-              <span className="section-label">PORTFÓLIO</span>
-              <h3>Projetos em destaque</h3>
-            </div>
+  <div className="projects-intro">
+    <div className="container">
 
+      <span className="section-label">
+        PORTFÓLIO
+      </span>
 
-            {/* Projeto NovaData */}
-            <article className="project-card">
+      <h3>
+        Projetos em destaque
+      </h3>
 
-              <div className="project-image">
-                <img
-                  src={imgNovaData}
-                  alt="Dashboard NovaData"
-                />
-              </div>
+      <p>
+        Soluções desenvolvidas unindo tecnologia, processos e dados
+        para transformar informações em resultados.
+      </p>
 
-
-              <div className="project-content">
-
-                <span className="project-category">
-                  Engenharia de Dados & BI
-                </span>
-
-                <h4>
-                  Projeto BI - NovaData
-                </h4>
-
-                <p>
-                  Solução End-to-End desenvolvida para estruturar o fluxo
-                  de informações corporativas. O projeto engloba desde a
-                  modelagem e extração de dados com Python e SQL Server,
-                  até a criação de painéis executivos no Power BI,
-                  incluindo Análise de Pareto (Curva ABC) e gestão de estoque.
-                </p>
+    </div>
+  </div>
 
 
-                <div className="technologies">
+  {/* Projeto 01 */}
+  <article className="project-slide">
 
-                  <span className="technology powerbi">
-                    Power BI
-                  </span>
+    <div className="project-slide-number">
+      01
+    </div>
 
-                  <span className="technology python">
-                    Python
-                  </span>
+    <div className="project-slide-image">
+      <img
+        src={imgNovaData}
+        alt="Dashboard do projeto NovaData"
+      />
+    </div>
 
-                  <span className="technology sql">
-                    SQL Server
-                  </span>
+    <div className="project-slide-content">
 
-                </div>
+      <span className="project-slide-category">
+        ENGENHARIA DE DADOS & BI
+      </span>
 
+      <h4>
+        Projeto BI
+        <br />
+        <span>NovaData</span>
+      </h4>
 
-                <a
-                  href="https://github.com/MrsMurilo/Projeto-BI-NovaData"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-button"
-                >
-                  Ver no GitHub →
-                </a>
+      <p>
+        Solução End-to-End desenvolvida para estruturar o fluxo
+        de informações corporativas, desde a extração e tratamento
+        dos dados até a criação de dashboards executivos no Power BI.
+      </p>
 
-              </div>
+      <div className="technologies">
 
-            </article>
+        <span className="technology">
+          Power BI
+        </span>
 
-          </div>
-        </section>
+        <span className="technology">
+          Python
+        </span>
+
+        <span className="technology">
+          SQL Server
+        </span>
+
+      </div>
+
+      <a
+        href="https://github.com/MrsMurilo/Projeto-BI-NovaData"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-slide-button"
+      >
+        Ver projeto →
+      </a>
+
+    </div>
+
+  </article>
+
+</section>
 
 
         {/* Contato */}
