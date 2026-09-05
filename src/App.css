@@ -1,184 +1,247 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+/* ========================================
+   PORTFÓLIO - MURILO SOUZA
+   IDENTIDADE VISUAL
+======================================== */
 
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-}
+/* ---------- RESET ---------- */
 
-.hero {
-  position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
-}
-
-#center {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
-
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
-}
-
-#next-steps {
-  display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
-
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-#docs {
-  border-right: 1px solid var(--border);
-
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-}
-
-#next-steps ul {
-  list-style: none;
+* {
+  margin: 0;
   padding: 0;
-  display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
+  box-sizing: border-box;
+}
 
-  .logo {
-    height: 18px;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  a {
-    color: var(--text-h);
-    font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
 
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
-  }
+  background: #f8fafc;
+  color: #1e293b;
 
-  @media (max-width: 1024px) {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+  line-height: 1.6;
+}
 
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+
+/* ---------- VARIÁVEIS ---------- */
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e3a8a;
+  --primary-light: #eff6ff;
+
+  --text: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --background: #f8fafc;
+  --white: #ffffff;
+
+  --border: #e2e8f0;
+
+  --shadow-sm: 0 4px 15px rgba(15, 23, 42, 0.05);
+
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+}
+
+
+/* ---------- CONTAINER ---------- */
+
+main {
+  width: 100%;
+}
+
+main > section {
+  width: 100%;
+}
+
+
+/* ---------- TÍTULOS DAS SEÇÕES ---------- */
+
+section h3 {
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.bg-white {
+  background: var(--white);
+}
+
+.rounded-xl {
+  border-radius: var(--radius-lg);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+
+/* ---------- TRANSIÇÕES ---------- */
+
+a,
+button,
+.bg-white {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
 }
 
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
-}
+/* ========================================
+   HEADER
+======================================== */
 
-.ticks {
-  position: relative;
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   width: 100%;
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
+  background: rgba(255, 255, 255, 0.85);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.header-container {
+  max-width: 1180px;
+  height: 76px;
+
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo {
+  color: #0f172a;
+
+  font-size: 21px;
+  font-weight: 800;
+
+  letter-spacing: -0.03em;
+
+  transition: color 0.25s ease;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+.logo:hover {
+  color: #2563eb;
+}
+
+
+/* ---------- NAVEGAÇÃO ---------- */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.nav a {
+  position: relative;
+
+  color: #475569;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: color 0.25s ease;
+}
+
+.nav a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: #2563eb;
+
+  border-radius: 10px;
+
+  transition: width 0.25s ease;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+/* ========================================
+   HEADER - MOBILE
+======================================== */
+
+@media (max-width: 640px) {
+
+  .header-container {
+    height: 68px;
+    padding: 0 20px;
   }
 
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
+  .logo {
+    font-size: 18px;
   }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
+
+  .nav {
+    gap: 16px;
   }
+
+  .nav a {
+    font-size: 13px;
+  }
+
 }
