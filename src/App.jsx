@@ -1,4 +1,6 @@
 import './App.css'
+import { Signature } from './components/Signature';
+import { SocialHighlightCards } from './components/SocialHighlightCards';
 
 import imgNovaData from './assets/visao_geral.png'
 
@@ -210,59 +212,49 @@ function App() {
                 <p>
                   Estou disponível para novas conexões e oportunidades
                   para agregar valor através da tecnologia e dos dados.
+
                 </p>
 
               </div>
-
-
-              <div className="contact-buttons">
-
-                <a
-                  href="https://linkedin.com/in/murilo-souza-mszz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact-button linkedin"
-                >
-                  LinkedIn
-                </a>
-
-                <a
-                  href="mailto:murilosouza.sm@gmail.com"
-                  className="contact-button email"
-                >
-                  E-mail
-                </a>
-
-                <a
-                  href="https://wa.me/5511973516812?text=Olá%2C%20vim%20através%20do%20seu%20site!"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact-button whatsapp"
-                >
-                  WhatsApp
-                </a>
-
-              </div>
+              
+              <div style={{ marginTop: "2rem" }}>
+               <SocialHighlightCards />
+               </div>
 
             </div>
 
           </div>
         </section>
 
-      </main>
-
+        </main>
 
       {/* Rodapé */}
-      <footer className="footer">
-        <div className="container">
-          <p>
+
+{/* Aqui termina a sua section de contato */}
+
+      {/* --- INÍCIO DO RODAPÉ --- */}
+      <footer className="footer-section">
+        <div className="footer-container">
+          
+          {/* Lado Esquerdo: Copyright */}
+          <p className="footer-copyright">
             © 2026 Murilo Souza. Todos os direitos reservados.
           </p>
+
+          {/* Lado Direito: Assinatura */}
+          {/* Coloque a imagem da sua assinatura na pasta public ou importe ela no topo do arquivo */}
+          <img 
+            src="/AssinaturaSite.png" 
+            alt="Assinatura Murilo Souza" 
+            className="footer-signature" 
+          />
+
         </div>
       </footer>
+  {/* --- FIM DO RODAPÉ --- */}
 
     </div>
-  )
-}
+  );
+  }
 
-export default App
+  export default App;

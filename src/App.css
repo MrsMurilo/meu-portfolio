@@ -85,6 +85,19 @@ section h3 {
   letter-spacing: -0.02em;
 }
 
+/* ---------- Titulo ( CONTATOS ) ---------- */
+.contact-content h3 {
+  font-size: 3rem;
+  line-height: 1.15;
+}
+
+/* ---------- Titulo ( CONTATOS ) - MOBILE ---------- */
+@media (max-width: 768px) {
+  .contact-content h3 {
+    font-size: 2rem;
+  }
+}
+
 
 /* ---------- CARDS ---------- */
 
@@ -1274,4 +1287,65 @@ button,
 
 .project-slide-content p {
   max-width: 400px;
+}
+/* ========================================
+   AJUSTE — FINAL DA PAGINA - ASSINATURA
+======================================== */
+.footer-signature {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-signature img {
+  height: auto;
+  max-width: 1800px;
+}
+
+/* Fundo escuro que ocupa a tela toda */
+.footer-section {
+  background-color: #161b22; /* Cor escura parecida com a da imagem */
+  width: 100%;
+  padding: 0.5rem 0; /* Espaçamento em cima e embaixo */
+  margin-top: 4rem; /* Distância da seção de contato acima */
+}
+
+/* Alinhamento dos itens (um de cada lado) */
+.footer-container {
+  max-width: 1200px; /* Mantém o mesmo alinhamento do seu site */
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between; /* Joga um item pra cada ponta */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo do texto de copyright */
+.footer-copyright {
+  color: #9ca3af; /* Cinza claro/azulado */
+  font-size: 0.875rem; /* Tamanho de fonte menor */
+  margin: 0;
+}
+
+/* Tamanho da imagem da assinatura */
+.footer-signature {
+  height: 150px; /* Ajuste a altura conforme a sua imagem */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Responsividade: para telas de celular (coloca um embaixo do outro) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* CONTATO — TÍTULO DA SEÇÃO */
+.contact-section .section-label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
