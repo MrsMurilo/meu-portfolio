@@ -1016,7 +1016,7 @@ button,
 
   overflow: hidden;
 
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: #eff6ff;
 
@@ -1037,6 +1037,10 @@ button,
   transform: scale(1.025);
 }
 
+.project-slide-image video {
+  width: 100%;
+  display: block;
+}
 
 /* ---------- CONTEÚDO ---------- */
 
@@ -1280,7 +1284,7 @@ button,
 }
 
 .project-slide-image {
-  right: 4vw;
+  right: 3vw;
 
   width: min(54vw, 720px);
 }

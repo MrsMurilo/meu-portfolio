@@ -1,7 +1,7 @@
 import "./social-highlight-cards.css";
 
 const socials = [
-  { label: "Murilo Souza no LinkedIn", href: "www.linkedin.com/in/murilo-souza-mszz", highlight: "#0a66c2", icon: "linkedin" },
+  { label: "Murilo Souza no LinkedIn", href: "https://www.linkedin.com/in/murilo-souza-mszz", highlight: "#0a66c2", icon: "linkedin" },
   { label: "Murilo Souza no GitHub", href: "https://github.com/MrsMurilo", highlight: "#181717", icon: "github" },
   { label: "Murilo Souza no Instagram", href: "https://www.instagram.com/in.souzza/", highlight: "#e4405f", icon: "instagram" },
 ];

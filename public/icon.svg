@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+    <linearGradient id="tabGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e7ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo com cantos arredondados -->
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#bgGrad)" />
+
+  <!-- Abas estilizadas sobrepostas -->
+  <!-- Aba do fundo -->
+  <rect x="34" y="32" width="60" height="42" rx="8" fill="#818cf8" opacity="0.6" />
+  
+  <!-- Aba intermediária -->
+  <rect x="28" y="44" width="72" height="46" rx="8" fill="#a5b4fc" opacity="0.8" />
+  
+  <!-- Aba frontal com detalhe -->
+  <rect x="22" y="56" width="84" height="46" rx="8" fill="url(#tabGrad)" />
+  <rect x="30" y="66" width="32" height="6" rx="3" fill="#6366f1" />
+  <circle cx="92" cy="69" r="4" fill="#6366f1" />
+</svg>

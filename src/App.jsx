@@ -3,6 +3,7 @@ import { Signature } from './components/Signature';
 import { SocialHighlightCards } from './components/SocialHighlightCards';
 
 import imgNovaData from './assets/visao_geral.png'
+import imgTabManager from './assets/tabmanager.png'
 
 function App() {
   return (
@@ -92,8 +93,8 @@ function App() {
 
                 <p>
                   Atualmente direciono minha carreira para <strong>Dados,
-                  Business Intelligence e Tecnologia</strong>, utilizando
-                  ferramentas como Power BI, SQL, Excel e Python para
+                  Business Intelligence e Tecnologia em processos administrativos</strong>, utilizando
+                  ferramentas como Power BI, Excel e Python para
                   transformar informações em soluções que apoiem a tomada
                   de decisões.
                 </p>
@@ -190,7 +191,70 @@ function App() {
 
   </article>
 
+{/* Projeto 02 */}
+  <article className="project-slide">
+
+    <div className="project-slide-number">
+      02
+    </div>
+
+    <div className="project-slide-image">
+  <video
+    src="/projects/tab-manager-demo.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
+
+    <div className="project-slide-content">
+
+      <span className="project-slide-category">
+        EXTENSÃO DE NAVEGADOR
+      </span>
+
+      <h4>
+        Projeto
+        <br />
+        <span>TabManager</span>
+      </h4>
+
+      <p>
+        Uma extensão moderna para Google Chrome desenvolvida em React, TypeScript e Tailwind CSS, desenhada para resolver o problema de sobrecarga de abas e consumo excessivo de memória RAM no navegador.
+      </p>
+
+      <div className="technologies">
+
+        <span className="technology">
+          React
+        </span>
+
+        <span className="technology">
+          TypeScript
+        </span>
+
+        <span className="technology">
+          Tailwind CSS
+        </span>
+
+      </div>
+
+      <a
+        href="https://github.com/MrsMurilo/Tab-Manager"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-slide-button"
+      >
+        Ver projeto →
+      </a>
+
+    </div>
+
+  </article>
+
 </section>
+
 
 
         {/* Contato */}
