@@ -3,7 +3,6 @@ import { Signature } from './components/Signature';
 import { SocialHighlightCards } from './components/SocialHighlightCards';
 
 import imgNovaData from './assets/visao_geral.png'
-import imgTabManager from './assets/tabmanager.png'
 
 function App() {
   return (
